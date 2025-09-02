@@ -1,0 +1,42 @@
+# Core CrewAI framework - Updated versions
+crewai>=0.70.0
+crewai-tools>=0.12.0
+
+# LLM Provider - Updated for better Groq compatibility
+litellm>=1.37.6
+
+# HTTP client for Telegram API (replaces python-telegram-bot issues)
+httpx>=0.27.0
+
+# Search & scraping tools
+tavily-python>=0.3.3
+serpapi>=0.1.5
+requests>=2.31.0
+
+# Data processing
+pandas>=2.2.2
+numpy>=1.26.4
+
+# Charts & Images
+matplotlib>=3.9.0
+Pillow>=10.3.0
+
+# Environment variables handling
+python-dotenv>=1.0.1
+
+# Logging & error handling
+loguru>=0.7.2
+
+# Async support (if needed)
+aiohttp>=3.9.5
+
+# TELEGRAM OPTIONS - Choose ONE:
+
+# Option 1: Use httpx-based solution (RECOMMENDED - no dependency issues)
+# This is what the updated send_agent.py uses - no additional packages needed
+
+# Option 2: If you want to keep python-telegram-bot, use older stable version
+# python-telegram-bot==20.8  # Older version without proxies parameter issue
+
+# Option 3: Latest telegram bot (may have issues)
+# python-telegram-bot>=21.0  # Comment this out if you get proxies errors
